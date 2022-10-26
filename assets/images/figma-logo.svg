@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="11px" height="16px" viewBox="0 0 11 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.6 (67491) - http://www.bohemiancoding.com/sketch -->
+    <title>figma-logo</title>
+    <desc>Created with Sketch.</desc>
+    <g id="V2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="landing-page" transform="translate(-1137.000000, -345.000000)">
+            <g id="Group-15" transform="translate(930.000000, 333.000000)">
+                <g id="Group-13" transform="translate(193.000000, 0.000000)">
+                    <g id="figma-logo" transform="translate(14.000000, 12.000000)">
+                        <path d="M2.75,16 C4.268,16 5.5,14.8053333 5.5,13.3333333 L5.5,10.6666667 L2.75,10.6666667 C1.232,10.6666667 0,11.8613333 0,13.3333333 C0,14.8053333 1.232,16 2.75,16 Z" id="path0_fill" fill="#0ACF83"></path>
+                        <path d="M0,8 C0,6.528 1.232,5.33333333 2.75,5.33333333 L5.5,5.33333333 L5.5,10.6666667 L2.75,10.6666667 C1.232,10.6666667 0,9.472 0,8 Z" id="path1_fill" fill="#A259FF"></path>
+                        <path d="M0,2.66666667 C0,1.19466667 1.232,0 2.75,0 L5.5,0 L5.5,5.33333333 L2.75,5.33333333 C1.232,5.33333333 0,4.13866667 0,2.66666667 Z" id="path1_fill_1_" fill="#F24E1E"></path>
+                        <path d="M5.5,0 L8.25,0 C9.768,0 11,1.19466667 11,2.66666667 C11,4.13866667 9.768,5.33333333 8.25,5.33333333 L5.5,5.33333333 L5.5,0 Z" id="path2_fill" fill="#FF7262"></path>
+                        <path d="M11,8 C11,9.472 9.768,10.6666667 8.25,10.6666667 C6.732,10.6666667 5.5,9.472 5.5,8 C5.5,6.528 6.732,5.33333333 8.25,5.33333333 C9.768,5.33333333 11,6.528 11,8 Z" id="path3_fill" fill="#1ABCFE"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
