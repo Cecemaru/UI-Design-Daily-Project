@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
 // Figma Color variables
 $figma_white: #ecebf6;
 $figma_darkblue: #272c48;
@@ -5,8 +7,24 @@ $figma_purple: #d4357d;
 $figma_grey: #8a8ba1;
 $figma_yellow: #ecb332;
 $figma_blue: #27b8bf;
+
 // Color Variables
-$white: #efefff;
-$darkblue: #202142;
-$grey: #f1f1fd;
+$main-bg: #fcfcff;
+$main-clr: #202142;
+$second-bg: #9a9ad479;
+$pink: #ff6a95;
+
 // Font Variables
+$body-font: "Poppins", sans-serif;
+$h1-font-size: 1.5rem;
+$h2-font-size: 1.25rem;
+$normal-font-size: 1rem;
+
+/*font weight*/
+$font-semi-bold: 700;
+$font-medium: 500;
+
+/*margin css*/
+$mb-1: 0.5rem;
+$mb-2: 1rem;
+$mb-3: 1.5rem;

@@ -1,1 +1,87 @@
-/*# sourceMappingURL=style.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+/*font weight*/
+/*margin css*/
+/* $radius is the parameter of the function */
+h1 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.5rem;
+  text-align: center;
+  color: #202142;
+  font-family: "Poppins", sans-serif;
+}
+
+h2 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.25rem;
+  text-align: center;
+  color: #202142;
+  font-family: "Poppins", sans-serif;
+}
+
+p {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1rem;
+  text-align: center;
+  color: #202142;
+  font-family: "Poppins", sans-serif;
+  display: inline-block;
+}
+
+ul {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1rem;
+  text-align: center;
+  color: #202142;
+  font-family: "Poppins", sans-serif;
+}
+
+li {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1rem;
+  text-align: center;
+  color: #202142;
+  font-family: "Poppins", sans-serif;
+}
+
+a {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1rem;
+  text-align: center;
+  color: #202142;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+}
+
+button {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1rem;
+  font-family: "Poppins", sans-serif;
+}
+
+header {
+  background-color: aqua;
+  padding: 5px 0px;
+  height: 100px;
+  width: 100%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  line-height: 1.5;
+  color: #202142;
+  background-color: #fcfcff;
+}/*# sourceMappingURL=style.css.map */

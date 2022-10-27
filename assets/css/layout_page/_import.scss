@@ -3,10 +3,8 @@
 @import "../base_abstracts/functions";
 @import "../base_abstracts/mixins";
 @import "../base_abstracts/typography";
-
+// Layout_page
+@import "header";
+@import "home";
 // Components
 @import "../components/buttons";
-
-// Layout_page
-@import "../layout_page/header";
-@import "../layout_page/home";

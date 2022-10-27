@@ -1,0 +1,56 @@
+h1 {
+  font-style: normal;
+  font-weight: $font-semi-bold;
+  font-size: $h1-font-size;
+  text-align: center;
+  color: $main-clr;
+  font-family: $body-font;
+}
+h2 {
+  font-style: normal;
+  font-weight: $font-semi-bold;
+  font-size: $h2-font-size;
+  text-align: center;
+  color: $main-clr;
+  font-family: $body-font;
+}
+p {
+  font-style: normal;
+  font-weight: $font-medium;
+  font-size: $normal-font-size;
+  text-align: center;
+  color: $main-clr;
+  font-family: $body-font;
+  display: inline-block;
+}
+ul {
+  font-style: normal;
+  font-weight: $font-medium;
+  font-size: $normal-font-size;
+  text-align: center;
+  color: $main-clr;
+  font-family: $body-font;
+}
+li {
+  font-style: normal;
+  font-weight: $font-medium;
+  font-size: $normal-font-size;
+  text-align: center;
+  color: $main-clr;
+  font-family: $body-font;
+}
+a {
+  font-style: normal;
+  font-weight: $font-medium;
+  font-size: $normal-font-size;
+  text-align: center;
+  color: $main-clr;
+  text-decoration: none;
+  font-family: $body-font;
+}
+button {
+  font-style: normal;
+  font-weight: $font-semi-bold;
+  font-size: $normal-font-size;
+  font-family: $body-font;
+}
