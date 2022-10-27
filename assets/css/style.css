@@ -120,4 +120,29 @@ body {
   line-height: 1.5;
   color: #202142;
   background-color: #fcfcff;
+}
+
+.button-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.button-box button {
+  padding: 15px 30px;
+  border: none;
+}
+.button-box button.button-dark {
+  vertical-align: top;
+  display: inline-block;
+  text-align: center;
+  display: block;
+  background-color: #202142;
+  color: #fcfcff;
+  border-radius: 10px;
+}
+.button-box button.button-light {
+  padding: 0 10px;
+  background-color: transparent;
+  color: #202142;
 }/*# sourceMappingURL=style.css.map */
