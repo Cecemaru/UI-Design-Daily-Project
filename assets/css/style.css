@@ -71,6 +71,42 @@ header {
   height: 100px;
   width: 100%;
 }
+header .logo {
+  display: inline-flex;
+  align-items: center;
+  padding-left: 50px;
+  margin-top: 26px;
+  gap: 5px;
+  width: 33.3333333333%;
+}
+header .logo p {
+  text-align: center;
+  white-space: nowrap;
+}
+header nav {
+  float: right;
+  width: 66.6666666667%;
+}
+header nav .wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-right: 50px;
+  gap: 20px;
+  margin-top: 19px;
+}
+header nav .wrapper li {
+  display: inline-block;
+  margin: 0 5px;
+}
+header nav .wrapper li a {
+  text-align: center;
+}
+
+#check,
+.menu-btn {
+  display: none;
+}
 
 * {
   margin: 0;

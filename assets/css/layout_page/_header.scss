@@ -3,4 +3,37 @@ header {
   padding: 5px 0px;
   height: 100px;
   width: 100%;
+  .logo {
+    display: inline-flex;
+    align-items: center;
+    padding-left: 50px;
+    margin-top: 26px;
+    gap: 5px;
+    width: calc(100% / 3);
+    p {
+      text-align: center;
+      white-space: nowrap;
+    }
+  }
+  nav {
+    float: right;
+    width: calc((100% / 3) * 2);
+    .wrapper {
+      @include flex-between;
+      margin-right: 50px;
+      gap: 20px;
+      margin-top: 19px;
+      li {
+        display: inline-block;
+        margin: 0 5px;
+        a {
+          text-align: center;
+        }
+      }
+    }
+  }
+}
+#check,
+.menu-btn {
+  display: none;
 }
