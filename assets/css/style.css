@@ -13,7 +13,7 @@ h1 {
 
 h2 {
   font-style: normal;
-  font-weight: 700;
+  font-weight: 500;
   font-size: 1.25rem;
   text-align: center;
   color: #202142;
@@ -66,10 +66,11 @@ button {
 }
 
 header {
-  background-color: aqua;
+  background: #fcfcff;
   padding: 5px 0px;
   height: 100px;
   width: 100%;
+  box-shadow: 0 10px 20px -7px rgba(0, 0, 0, 0.5);
 }
 header .logo {
   display: inline-flex;
@@ -103,11 +104,84 @@ header nav .wrapper li a {
   text-align: center;
 }
 
-#check,
+label {
+  color: white;
+  font-size: 35px;
+  padding: 0px;
+  text-align: center;
+}
+
 .menu-btn {
+  font-size: 30px;
+  color: #202142;
+  float: right;
+  line-height: 94px;
+  margin-right: 40px;
+  cursor: pointer;
   display: none;
 }
 
+#check {
+  display: none;
+}
+
+/*=================media query=========*/
+@media (max-width: 952px) {
+  label .navbar-logo {
+    font-size: 30px;
+  }
+  header nav li a {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 852px) {
+  .menu-btn {
+    display: block;
+  }
+  .wrapper {
+    display: block !important;
+    margin: 0 !important;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-color: #fcfcff;
+    top: 100px;
+    right: -100%;
+    text-align: center;
+    transition: 0.6s;
+  }
+  .wrapper li {
+    margin: 40px 0px !important;
+    line-height: 30px;
+    display: block !important;
+    padding: 10px 15px;
+    transition: 0.5s;
+  }
+  .wrapper li a {
+    padding: 10px 15px;
+    font-size: 20px;
+    color: #202142;
+  }
+  .wrapper li a.active {
+    color: #202142;
+    background: rgba(154, 154, 212, 0.4745098039);
+    border-radius: 32px;
+  }
+  .wrapper li a:hover {
+    background: rgba(154, 154, 212, 0.4745098039);
+    border-radius: 32px;
+  }
+  .wrapper li a {
+    transition: 0.5s;
+    color: rgba(154, 154, 212, 0.4745098039);
+  }
+  .wrapper li a:hover {
+    color: #202142;
+  }
+  #check:checked ~ nav .wrapper {
+    right: 0;
+  }
+}
 * {
   margin: 0;
   padding: 0;
