@@ -1,0 +1,22 @@
+.resources-container {
+  margin: 80px auto;
+  padding: 0 10px;
+  max-width: 650px;
+  display: grid;
+  place-items: center;
+  h1 {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  h2 {
+    margin-top: $mb-2;
+    margin-bottom: 40px;
+  }
+  .form-box {
+    form {
+      input[type="text"] {
+        background-color: $main-bg;
+      }
+    }
+  }
+}

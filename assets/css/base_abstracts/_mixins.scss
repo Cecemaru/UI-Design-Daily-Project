@@ -8,6 +8,11 @@
   align-items: center;
   justify-content: center;
 }
+@mixin flex-start {
+  display: inline-flex;
+  align-items: center;
+  justify-content: start;
+}
 @mixin flex-between {
   display: flex;
   align-items: center;

@@ -60,22 +60,30 @@
       </header>
       <!-- =========header and navbar end=======  -->
     </div>
-    <section>
-      <h1>free ui resorcus</h1>
-      <h2>the largest od 100%asdfasdfasdfadfasdfasdf</h2>
-      <div class="form-box">
-        <form action="#">
-          <select name="pets" id="pet-select">
-            <option value="dog">Free designs</option>
-            <option value="cat">Cat</option>
-            <option value="hamster">License</option>
-            <option value="parrot">Articles</option>
-            <option value="spider">Contributors</option>
-            <option value="goldfish">About</option>
-          </select>
-          <input type="text" />
-        </form>
-      </div>
+    <section class="resources-container">
+      <h1>Free UI resources for everyone</h1>
+      <h2>
+        The largest database of 100% free UI components and designs available in
+        the formats populer by UI designers.
+      </h2>
+      <form class="search-form" action="#">
+        <select name="UI-sources" id="UI-sources" class="custom-select sources">
+          <option value="Free-designs">Free designs</option>
+          <option value="License">License</option>
+          <option value="Articles">Articles</option>
+          <option value="Contributors">Contributors</option>
+          <option value="About">About</option>
+        </select>
+        <button type="submit" class="search-button">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+        <input
+          type="search"
+          value=""
+          placeholder="Search"
+          class="search-input"
+        />
+      </form>
       <label for="pet-select">Choose a pet:</label>
     </section>
     <script src="assets/js/main.js"></script>

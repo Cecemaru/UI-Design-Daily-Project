@@ -18,7 +18,7 @@ header {
   }
   nav {
     float: right;
-    width: calc((100% / 3) * 2);
+    width: 60%;
     .wrapper {
       @include flex-between;
       margin-right: 50px;

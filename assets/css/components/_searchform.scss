@@ -1,0 +1,51 @@
+.search-form {
+  @include flex-start;
+  min-width: 100%;
+  height: 60px;
+  @include border-radius(10px);
+  border: 1px solid #efefff;
+  box-shadow: 0 7px 15px -3px rgba(0, 0, 0, 0.3);
+  background: #fff;
+  transition: all 0.3s ease;
+
+  &.focus {
+    box-shadow: 0 3px 4px rgba(0, 0, 0, 0.15);
+  }
+  select {
+    margin: 15px 10px;
+    border: none;
+    @include border-radius(5px);
+    background: $main-bg;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: $normal-font-size;
+    transition: 0.5s;
+    option {
+      color: $main-clr;
+      &[value=""][disable] {
+        display: none;
+      }
+    }
+    &:focus {
+      outline: none;
+    }
+  }
+  .search-input {
+    font-size: $normal-font-size;
+    width: 100%;
+    background: none;
+    color: #5a6674;
+    height: 20px;
+    border: none;
+    appearance: none;
+    outline: none;
+  }
+  .search-button {
+    font-size: 20px;
+    margin-left: 10px;
+    border: none;
+    background: none;
+    outline: none !important;
+    cursor: pointer;
+  }
+}
