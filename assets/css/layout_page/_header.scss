@@ -34,13 +34,6 @@ header {
     }
   }
 }
-label {
-  color: white;
-  font-size: 35px;
-  padding: 0px;
-  text-align: center;
-}
-
 .menu-btn {
   font-size: 30px;
   color: $main-clr;
@@ -83,6 +76,7 @@ label {
     right: -100%;
     text-align: center;
     transition: 0.6s;
+    z-index: 100;
     li {
       margin: 40px 0px !important;
       line-height: 30px;

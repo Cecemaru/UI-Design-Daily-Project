@@ -104,13 +104,6 @@ header nav .wrapper li a {
   text-align: center;
 }
 
-label {
-  color: white;
-  font-size: 35px;
-  padding: 0px;
-  text-align: center;
-}
-
 .menu-btn {
   font-size: 30px;
   color: #202142;
@@ -149,6 +142,7 @@ label {
     right: -100%;
     text-align: center;
     transition: 0.6s;
+    z-index: 100;
   }
   .wrapper li {
     margin: 40px 0px !important;
@@ -354,4 +348,75 @@ body {
   background: none;
   outline: none !important;
   cursor: pointer;
+}
+
+.switch {
+  position: relative;
+  border-radius: 70px;
+}
+.switch input {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  width: 236px;
+  height: 61px;
+  border: 1px solid #efefff;
+  border-radius: 70px;
+  background-color: #edf2fe;
+  outline: none;
+  transition: 0.25s;
+}
+.switch input::after, .switch input::before {
+  z-index: 2;
+  position: absolute;
+  top: -29px;
+  font-weight: 500;
+  font-size: 1rem;
+  color: #202142;
+}
+.switch input::before {
+  content: "Latest";
+  left: 36px;
+  opacity: 0.6;
+  font-family: "Poppins", sans-serif;
+}
+.switch input::after {
+  content: "Popular";
+  right: 29px;
+  font-family: "Poppins", sans-serif;
+}
+.switch input:checked::after, .switch input:checked::before {
+  transition: 0.5s;
+}
+.switch input:checked::after {
+  color: #202142;
+  opacity: 0.6;
+}
+.switch input:checked::before {
+  color: #202142;
+  opacity: 1;
+}
+.switch input:checked + label {
+  left: 7px;
+  right: 129px;
+  background-color: #fcfcff;
+  transition: left 0.5s, right 0.4s 0.2s;
+}
+.switch input:not(:checked) {
+  background: #edf2fe;
+}
+.switch input:not(:checked) + label {
+  left: 129px;
+  right: 7px;
+  background: #fcfcff;
+  transition: left 0.4s 0.2s, right 0.5s, background 0.35s;
+}
+.switch label {
+  z-index: 1;
+  position: absolute;
+  top: -44px;
+  bottom: 13px;
+  border-radius: 45px;
+  border: 1px solid #efefff;
+  box-shadow: 0px 10px 15px -10px rgba(2, 5, 132, 0.5);
 }/*# sourceMappingURL=style.css.map */
