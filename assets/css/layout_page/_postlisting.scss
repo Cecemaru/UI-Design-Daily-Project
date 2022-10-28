@@ -1,0 +1,58 @@
+.post-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(5rem, 27rem));
+  justify-content: center;
+  gap: 33px;
+  padding: 0 20px;
+  .post-listing {
+    gap: 15px;
+    display: grid;
+    a {
+      position: relative;
+      @include border-radius(15px);
+      .design-img {
+        & > img {
+          width: 100%;
+          height: auto;
+          object-fit: cover;
+        }
+      }
+      .software-icon {
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        @include flex-center;
+        width: 10px;
+        height: 10px;
+        padding: 20px;
+        @include border-radius(50%);
+        background-color: $main-bg;
+      }
+    }
+    .design-info {
+      @include flex-between;
+      .author-info {
+        @include flex-center;
+        gap: 3px;
+        img {
+          width: 40px;
+          height: 40px;
+          @include border-radius(50%);
+          object-fit: cover;
+        }
+        small {
+          margin-left: 11px;
+        }
+      }
+      .author-icons {
+        font-size: $normal-font-size;
+        color: $main-clr;
+        @include flex-center;
+        gap: 5px;
+        i:nth-child(2) {
+          margin-left: 15px;
+        }
+      }
+    }
+  }
+}

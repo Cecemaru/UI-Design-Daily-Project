@@ -209,6 +209,73 @@ body {
   background-color: #fcfcff;
 }
 
+.post-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(5rem, 27rem));
+  justify-content: center;
+  gap: 33px;
+  padding: 0 20px;
+}
+.post-container .post-listing {
+  gap: 15px;
+  display: grid;
+}
+.post-container .post-listing a {
+  position: relative;
+  border-radius: 15px;
+}
+.post-container .post-listing a .design-img > img {
+  width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.post-container .post-listing a .software-icon {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 10px;
+  height: 10px;
+  padding: 20px;
+  border-radius: 50%;
+  background-color: #fcfcff;
+}
+.post-container .post-listing .design-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.post-container .post-listing .design-info .author-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3px;
+}
+.post-container .post-listing .design-info .author-info img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.post-container .post-listing .design-info .author-info small {
+  margin-left: 11px;
+}
+.post-container .post-listing .design-info .author-icons {
+  font-size: 1rem;
+  color: #202142;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+.post-container .post-listing .design-info .author-icons i:nth-child(2) {
+  margin-left: 15px;
+}
+
 .button-box {
   display: flex;
   align-items: center;
