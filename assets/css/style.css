@@ -419,4 +419,50 @@ body {
   border-radius: 45px;
   border: 1px solid #efefff;
   box-shadow: 0px 10px 15px -10px rgba(2, 5, 132, 0.5);
+}
+
+.software-item {
+  width: 61px;
+  height: 61px;
+  border-radius: 50%;
+  background-color: #edf2fe;
+  border: 1px solid rgba(154, 154, 212, 0.4745098039);
+  cursor: pointer;
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+  transition: 0.5s;
+}
+.software-item.figma {
+  background-image: url("../images/figma-logo.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 19px;
+}
+.software-item.sketch {
+  background-image: url("../images/sketch-logo.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 32px;
+}
+.software-item.studio {
+  background-image: url("../images/invision-studio-logo.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 29px;
+}
+.software-item.xd {
+  background-image: url("../images/adobe-xd-logo.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 32px;
+}
+.software-item.photoshop {
+  background-image: url("../images/photoshop-logo.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 34px;
+}
+.software-item.active {
+  border: 1px solid #ff6a95;
 }/*# sourceMappingURL=style.css.map */

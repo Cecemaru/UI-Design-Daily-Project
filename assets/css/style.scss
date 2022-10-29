@@ -1,1 +1,47 @@
 @import "layout_page/import";
+
+.software-item {
+  width: 61px;
+  height: 61px;
+  @include border-radius(50%);
+  background-color: $filter-bg-clr;
+  border: 1px solid $second-bg;
+  cursor: pointer;
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+  transition: 0.5s;
+  &.figma {
+    background-image: url("../images/figma-logo.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 19px;
+  }
+  &.sketch {
+    background-image: url("../images/sketch-logo.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 32px;
+  }
+  &.studio {
+    background-image: url("../images/invision-studio-logo.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 29px;
+  }
+  &.xd {
+    background-image: url("../images/adobe-xd-logo.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 32px;
+  }
+  &.photoshop {
+    background-image: url("../images/photoshop-logo.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 34px;
+  }
+  &.active {
+    border: 1px solid $pink;
+  }
+}
