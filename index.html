@@ -100,8 +100,16 @@
             <label for="switcher"></label>
           </label>
         </div>
-        <div class="category-scope"></div>
-        <div class="sofware-scope">
+        <div class="category-scope">
+          <ul class="tag-filter">
+            <li class="post-tag active">All</li>
+            <li class="post-tag">Web</li>
+            <li class="post-tag">Mobile</li>
+            <li class="post-tag">UI Kit</li>
+            <li class="post-tag">Coded</li>
+          </ul>
+        </div>
+        <div class="software-scope">
           <div class="software-item figma" id="figma"></div>
           <div class="software-item sketch active" id="sketch"></div>
           <div class="software-item studio" id="studio"></div>
@@ -113,7 +121,7 @@
     <!-- =============filter layout software icon========= -->
     <!-- ========post listing start============= -->
     <section class="post-container">
-      <div class="post-listing">
+      <div class="post-listing" data-filter="web">
         <a href="#">
           <div class="design-img">
             <img src="assets/images/project1.png" alt="" />
@@ -134,7 +142,7 @@
           </div>
         </div>
       </div>
-      <div class="post-listing">
+      <div class="post-listing" data-filter="mobile">
         <a href="#">
           <div class="design-img">
             <img src="assets/images/project1.png" alt="" />
@@ -155,7 +163,7 @@
           </div>
         </div>
       </div>
-      <div class="post-listing">
+      <div class="post-listing" data-filter="coded">
         <a href="#">
           <div class="design-img">
             <img src="assets/images/project1.png" alt="" />
