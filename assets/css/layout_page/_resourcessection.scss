@@ -34,17 +34,3 @@
   @include flex-between;
   flex-wrap: wrap;
 }
-
-@media screen and (max-width: 656px) {
-  // .active-scope {
-  //   width: 30%;
-  // }
-  // .category-scope {
-  //   width: 70%;
-  // }
-  .filter-layout {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 20px;
-  }
-}

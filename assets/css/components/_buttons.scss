@@ -1,22 +1,26 @@
+button {
+  padding: 15px 30px;
+  border: none;
+  &.button-dark {
+    vertical-align: top;
+    display: inline-block;
+    text-align: center;
+    display: block;
+    background-color: $main-clr;
+    color: $main-bg;
+    @include border-radius(10px);
+  }
+  &.button-light {
+    padding: 0 10px;
+    background-color: transparent;
+    color: $main-clr;
+  }
+}
 .button-box {
   @include flex-center;
   gap: 10px;
-  button {
-    padding: 15px 30px;
-    border: none;
-    &.button-dark {
-      vertical-align: top;
-      display: inline-block;
-      text-align: center;
-      display: block;
-      background-color: $main-clr;
-      color: $main-bg;
-      @include border-radius(10px);
-    }
-    &.button-light {
-      padding: 0 10px;
-      background-color: transparent;
-      color: $main-clr;
-    }
-  }
+}
+
+.mobile-button {
+  display: none;
 }

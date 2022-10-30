@@ -21,15 +21,9 @@
   </head>
   <body>
     <div class="container">
-      <!-- ========header and navbar start======== -->
+      <!-- ======== header and navbar start ======== -->
       <header>
         <!-- ========header logo======= -->
-        <!-- ==== menu btn ===== -->
-        <input type="checkbox" id="check" />
-        <label for="check" class="menu-btn">
-          <i class="fa-solid fa-bars"></i>
-        </label>
-        <!-- ==== menubtn == -->
         <label class="logo">
           <img
             class="navbar-logo"
@@ -48,18 +42,29 @@
               <li><a href="#">Contributors</a></li>
               <li><a href="#">About</a></li>
             </ul>
-            <!-- =====login and signup button====== -->
-            <div class="button-box">
+            <div class="mobile-button">
               <button class="button-light">Login</button>
               <button class="button-dark">Sign Up</button>
             </div>
-            <!-- ========sign and login button======  -->
           </div>
         </nav>
+        <!-- =====login and signup button====== -->
+        <div class="button-box">
+          <button class="button-light">Login</button>
+          <button class="button-dark">Sign Up</button>
+        </div>
+        <!-- ========sign and login button======  -->
+        <!-- ==== menu btn ===== -->
+        <label for="check" class="menu-btn" onclick="menuOpen()">
+          <i class="fa-solid fa-bars"></i>
+        </label>
+        <!-- ==== menubtn == -->
+        <!-- ===mobile menu==== -->
+        <!-- ====mobile menu=== -->
         <!-- ======header navbar and hamburger menu end======== -->
       </header>
-      <!-- =========header and navbar end=======  -->
-      <!-- ============== resources for start ========= -->
+      <!-- ====End====  -->
+      <!-- =========== resources for start ========= -->
       <section class="resources-container">
         <h1>Free UI resources for everyone</h1>
         <h2>
@@ -89,103 +94,265 @@
           />
         </form>
       </section>
-      <!-- ============== resources for start ========= -->
+      <!-- ====End==== -->
+      <!-- =========== filter layout software icon =========== -->
+      <section class="filter-container">
+        <div class="filter-layout">
+          <div class="active-scope">
+            <label class="switch">
+              <input type="checkbox" id="switcher" />
+              <label for="switcher"></label>
+            </label>
+          </div>
+          <div class="category-scope">
+            <ul class="tag-filter">
+              <li class="post-tag active">All</li>
+              <li class="post-tag">Web</li>
+              <li class="post-tag">Mobile</li>
+              <li class="post-tag">UI Kit</li>
+              <li class="post-tag">Coded</li>
+            </ul>
+          </div>
+          <div class="software-scope">
+            <div class="software-item figma" id="figma"></div>
+            <div class="software-item sketch active" id="sketch"></div>
+            <div class="software-item studio" id="studio"></div>
+            <div class="software-item xd" id="xd"></div>
+            <div class="software-item photoshop" id="photoshop"></div>
+          </div>
+        </div>
+      </section>
+      <!-- ====End==== -->
+      <!-- ======== post listing start ============= -->
+      <section class="post-container">
+        <div
+          class="post-listing select"
+          data-tag-filter="web"
+          data-software-filter="figma"
+        >
+          <a href="#">
+            <div class="design-img">
+              <img src="assets/images/project1.png" alt="" />
+              <div class="software-icon">
+                <img src="assets/images/figma-logo.svg" alt="" />
+              </div>
+            </div>
+          </a>
+          <div class="design-info">
+            <div class="author-info">
+              <img src="assets/images/jennymolla.png" alt="" />
+              <small>by</small>
+              <p>Safa Doyran</p>
+            </div>
+            <div class="author-icons">
+              <i class="fa-solid fa-code"></i>24
+              <i class="fa-solid fa-hands-praying"></i>24
+            </div>
+          </div>
+        </div>
+        <div
+          class="post-listing select"
+          data-tag-filter="web"
+          data-software-filter="figma"
+        >
+          <a href="#">
+            <div class="design-img">
+              <img src="assets/images/project1.png" alt="" />
+              <div class="software-icon">
+                <img src="assets/images/figma-logo.svg" alt="" />
+              </div>
+            </div>
+          </a>
+          <div class="design-info">
+            <div class="author-info">
+              <img src="assets/images/jennymolla.png" alt="" />
+              <small>by</small>
+              <p>Jenny Mollia</p>
+            </div>
+            <div class="author-icons">
+              <i class="fa-solid fa-code"></i>24
+              <i class="fa-solid fa-hands-praying"></i>42
+            </div>
+          </div>
+        </div>
+        <div
+          class="post-listing select"
+          data-tag-filter="web"
+          data-software-filter="sketch"
+        >
+          <a href="#">
+            <div class="design-img">
+              <img src="assets/images/project1.png" alt="" />
+              <div class="software-icon">
+                <img src="assets/images/sketch-logo.svg" alt="" />
+              </div>
+            </div>
+          </a>
+          <div class="design-info">
+            <div class="author-info">
+              <img src="assets/images/jennymolla.png" alt="" />
+              <small>by</small>
+              <p>Jenny Mollia</p>
+            </div>
+            <div class="author-icons">
+              <i class="fa-solid fa-code"></i>24
+              <i class="fa-solid fa-hands-praying"></i>42
+            </div>
+          </div>
+        </div>
+        <div
+          class="post-listing select"
+          data-tag-filter="mobile"
+          data-software-filter="sketch"
+        >
+          <a href="#">
+            <div class="design-img">
+              <img src="assets/images/project1.png" alt="" />
+              <div class="software-icon">
+                <img src="assets/images/sketch-logo.svg" alt="" />
+              </div>
+            </div>
+          </a>
+          <div class="design-info">
+            <div class="author-info">
+              <img src="assets/images/jennymolla.png" alt="" />
+              <small>by</small>
+              <p>Jenny Mollia</p>
+            </div>
+            <div class="author-icons">
+              <i class="fa-solid fa-code"></i>24
+              <i class="fa-solid fa-hands-praying"></i>42
+            </div>
+          </div>
+        </div>
+        <div
+          class="post-listing select"
+          data-tag-filter="mobile"
+          data-software-filter="studio"
+        >
+          <a href="#">
+            <div class="design-img">
+              <img src="assets/images/project1.png" alt="" />
+              <div class="software-icon">
+                <img src="assets/images/invision-studio-logo.svg" alt="" />
+              </div>
+            </div>
+          </a>
+          <div class="design-info">
+            <div class="author-info">
+              <img src="assets/images/jennymolla.png" alt="" />
+              <small>by</small>
+              <p>Jenny Mollia</p>
+            </div>
+            <div class="author-icons">
+              <i class="fa-solid fa-code"></i>24
+              <i class="fa-solid fa-hands-praying"></i>42
+            </div>
+          </div>
+        </div>
+        <div
+          class="post-listing select"
+          data-tag-filter="ui kit"
+          data-software-filter="xd"
+        >
+          <a href="#">
+            <div class="design-img">
+              <img src="assets/images/project1.png" alt="" />
+              <div class="software-icon">
+                <img src="assets/images/adobe-xd-logo.svg" alt="" />
+              </div>
+            </div>
+          </a>
+          <div class="design-info">
+            <div class="author-info">
+              <img src="assets/images/jennymolla.png" alt="" />
+              <small>by</small>
+              <p>Jenny Mollia</p>
+            </div>
+            <div class="author-icons">
+              <i class="fa-solid fa-code"></i>24
+              <i class="fa-solid fa-hands-praying"></i>42
+            </div>
+          </div>
+        </div>
+        <div
+          class="post-listing select"
+          data-tag-filter="coded"
+          data-software-filter="photoshop"
+        >
+          <a href="#">
+            <div class="design-img">
+              <img src="assets/images/project1.png" alt="" />
+              <div class="software-icon">
+                <img src="assets/images/photoshop-logo.svg" alt="" />
+              </div>
+            </div>
+          </a>
+          <div class="design-info">
+            <div class="author-info">
+              <img src="assets/images/jennymolla.png" alt="" />
+              <small>by</small>
+              <p>Jenny Mollia</p>
+            </div>
+            <div class="author-icons">
+              <i class="fa-solid fa-code"></i>24
+              <i class="fa-solid fa-hands-praying"></i>42
+            </div>
+          </div>
+        </div>
+        <div
+          class="post-listing select"
+          data-tag-filter="coded"
+          data-software-filter="xd"
+        >
+          <a href="#">
+            <div class="design-img">
+              <img src="assets/images/project1.png" alt="" />
+              <div class="software-icon">
+                <img src="assets/images/adobe-xd-logo.svg" alt="" />
+              </div>
+            </div>
+          </a>
+          <div class="design-info">
+            <div class="author-info">
+              <img src="assets/images/jennymolla.png" alt="" />
+              <small>by</small>
+              <p>Jenny Mollia</p>
+            </div>
+            <div class="author-icons">
+              <i class="fa-solid fa-code"></i>24
+              <i class="fa-solid fa-hands-praying"></i>42
+            </div>
+          </div>
+        </div>
+        <div
+          class="post-listing select"
+          data-tag-filter="coded"
+          data-software-filter="photoshop"
+        >
+          <a href="#">
+            <div class="design-img">
+              <img src="assets/images/project1.png" alt="" />
+              <div class="software-icon">
+                <img src="assets/images/photoshop-logo.svg" alt="" />
+              </div>
+            </div>
+          </a>
+          <div class="design-info">
+            <div class="author-info">
+              <img src="assets/images/jennymolla.png" alt="" />
+              <small>by</small>
+              <p>Jenny Mollia</p>
+            </div>
+            <div class="author-icons">
+              <i class="fa-solid fa-code"></i>24
+              <i class="fa-solid fa-hands-praying"></i>42
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ====End===== -->
     </div>
-    <!-- ============filter layout software icon================= -->
-    <section class="filter-container">
-      <div class="filter-layout">
-        <div class="active-scope">
-          <label class="switch">
-            <input type="checkbox" id="switcher" />
-            <label for="switcher"></label>
-          </label>
-        </div>
-        <div class="category-scope">
-          <ul class="tag-filter">
-            <li class="post-tag active">All</li>
-            <li class="post-tag">Web</li>
-            <li class="post-tag">Mobile</li>
-            <li class="post-tag">UI Kit</li>
-            <li class="post-tag">Coded</li>
-          </ul>
-        </div>
-        <div class="software-scope">
-          <div class="software-item figma" id="figma"></div>
-          <div class="software-item sketch active" id="sketch"></div>
-          <div class="software-item studio" id="studio"></div>
-          <div class="software-item xd" id="xd"></div>
-          <div class="software-item photoshop" id="photoshop"></div>
-        </div>
-      </div>
-    </section>
-    <!-- =============filter layout software icon========= -->
-    <!-- ========post listing start============= -->
-    <section class="post-container">
-      <div class="post-listing" data-filter="web">
-        <a href="#">
-          <div class="design-img">
-            <img src="assets/images/project1.png" alt="" />
-            <div class="software-icon">
-              <img src="assets/images/sketch-logo.svg" alt="" />
-            </div>
-          </div>
-        </a>
-        <div class="design-info">
-          <div class="author-info">
-            <img src="assets/images/jennymolla.png" alt="" />
-            <small>by</small>
-            <p>Jenny Mollia</p>
-          </div>
-          <div class="author-icons">
-            <i class="fa-solid fa-code"></i>24
-            <i class="fa-solid fa-hands-praying"></i>24
-          </div>
-        </div>
-      </div>
-      <div class="post-listing" data-filter="mobile">
-        <a href="#">
-          <div class="design-img">
-            <img src="assets/images/project1.png" alt="" />
-            <div class="software-icon">
-              <img src="assets/images/sketch-logo.svg" alt="" />
-            </div>
-          </div>
-        </a>
-        <div class="design-info">
-          <div class="author-info">
-            <img src="assets/images/jennymolla.png" alt="" />
-            <small>by</small>
-            <p>Jenny Mollia</p>
-          </div>
-          <div class="author-icons">
-            <i class="fa-solid fa-code"></i>24
-            <i class="fa-solid fa-hands-praying"></i>42
-          </div>
-        </div>
-      </div>
-      <div class="post-listing" data-filter="coded">
-        <a href="#">
-          <div class="design-img">
-            <img src="assets/images/project1.png" alt="" />
-            <div class="software-icon">
-              <img src="assets/images/sketch-logo.svg" alt="" />
-            </div>
-          </div>
-        </a>
-        <div class="design-info">
-          <div class="author-info">
-            <img src="assets/images/jennymolla.png" alt="" />
-            <small>by</small>
-            <p>Jenny Mollia</p>
-          </div>
-          <div class="author-icons">
-            <i class="fa-solid fa-code"></i>24
-            <i class="fa-solid fa-hands-praying"></i>42
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- ================post listing end ============ -->
     <script src="assets/js/main.js"></script>
   </body>
 </html>

@@ -1,3 +1,10 @@
+.display-post {
+  display: block;
+}
+.hidden-display-post {
+  display: none;
+}
+
 // Abstracts
 @import "../base_abstracts/variables";
 @import "../base_abstracts/functions";
@@ -12,3 +19,5 @@
 @import "../components/buttons";
 @import "../components/searchform";
 @import "../components/filtercomponents";
+// media query
+@import "../base_abstracts/mediaQuery";
