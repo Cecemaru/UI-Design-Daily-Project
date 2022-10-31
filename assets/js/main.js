@@ -52,14 +52,14 @@ const softwareAll = document.querySelectorAll(".software-item");
 let postFilters = document.querySelectorAll(
   ".post-container .post-listing.select"
 );
-console.log(postFilters);
 softwareAll.forEach((softwareSelect) => {
   softwareSelect.addEventListener("click", () => {
     softwareAll.forEach((newbtn) => newbtn.classList.remove("active"));
     softwareSelect.classList.add("active");
 
     //filter
-    const softwareValue = softwareSelect.textContent;
+    const softwareValue = softwareSelect.getAttribute("id");
+    console.log(softwareValue);
     postFilters.forEach((postList) => {
       postList.className = "";
       postList.style.display = "none";

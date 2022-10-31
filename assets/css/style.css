@@ -88,6 +88,8 @@ header .logo {
   display: inline-flex;
   align-items: center;
   gap: 5px;
+  position: relative;
+  z-index: 11;
 }
 header .logo p {
   text-align: center;
@@ -119,6 +121,10 @@ header nav .wrapper .nav-links li a:hover {
   background: rgba(154, 154, 212, 0.4745098039);
   border-radius: 32px;
   color: #202142;
+}
+header label.menu-btn {
+  position: relative;
+  z-index: 11;
 }
 
 .menu-btn {
@@ -184,6 +190,10 @@ body {
 .post-container .post-listing {
   gap: 15px;
   display: grid;
+  transition: 0.5s;
+}
+.post-container .post-listing:hover {
+  transform: scale(1.05);
 }
 .post-container .post-listing a {
   position: relative;
@@ -405,6 +415,10 @@ button.button-light {
   display: flex;
   align-items: center;
   justify-content: center;
+  -webkit-padding-inline-start: 0;
+  -moz-padding-inline-start: 0;
+  -ms-padding-inline-start: 0;
+  -o-padding-inline-start: 0;
   -webkit-padding-start: 0px;
           padding-inline-start: 0px;
   flex-wrap: wrap;
@@ -473,19 +487,15 @@ button.button-light {
 }
 
 /*=================media query=========*/
+@media (max-width: 1272px) {
+  .filter-layout {
+    padding: 0 30px;
+  }
+}
 @media (max-width: 1001px) {
   .button-box {
     display: none;
   }
-}
-@media (max-width: 852px) {
-  .mobile-button {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-}
-@media (max-width: 1001px) {
   header nav li a {
     font-size: 1rem;
   }
@@ -494,6 +504,9 @@ button.button-light {
   }
   .button-box {
     display: none;
+  }
+  .filter-layout {
+    padding: 0 30px;
   }
 }
 @media (max-width: 852px) {
@@ -508,14 +521,15 @@ button.button-light {
     gap: 30px;
   }
   header nav .wrapper {
-    top: 100px;
+    top: 0px;
+    padding-top: 100px;
     width: 100%;
     height: 100vh;
     position: fixed;
     overflow: hidden;
     right: -100%;
     display: flex;
-    z-index: 10001;
+    z-index: 10;
     background-color: #fff;
     flex-direction: column;
     transition: all 0.5s;
@@ -526,14 +540,10 @@ button.button-light {
   header nav .wrapper .nav-links {
     display: block;
     list-style-type: disc;
-    -webkit-margin-before: 1em;
-            margin-block-start: 1em;
-    -webkit-margin-after: 1em;
-            margin-block-end: 1em;
-    -webkit-margin-start: 0px;
-            margin-inline-start: 0px;
-    -webkit-margin-end: 0px;
-            margin-inline-end: 0px;
+    -webkit-padding-inline-start: 0;
+    -moz-padding-inline-start: 0;
+    -ms-padding-inline-start: 0;
+    -o-padding-inline-start: 0;
     -webkit-padding-start: 0px;
             padding-inline-start: 0px;
   }
@@ -565,11 +575,15 @@ button.button-light {
   header nav .wrapper li a:hover {
     color: #202142;
   }
+  .filter-layout {
+    padding: 0 30px;
+  }
 }
 @media screen and (max-width: 656px) {
   .filter-layout {
     display: flex;
     flex-direction: column;
     margin-bottom: 20px;
+    padding: 0 10px;
   }
 }/*# sourceMappingURL=style.css.map */

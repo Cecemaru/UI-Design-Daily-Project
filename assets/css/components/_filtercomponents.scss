@@ -81,6 +81,10 @@
   font-weight: $font-medium;
   .tag-filter {
     @include flex-center;
+    -webkit-padding-inline-start: 0;
+    -moz-padding-inline-start: 0;
+    -ms-padding-inline-start: 0;
+    -o-padding-inline-start: 0;
     padding-inline-start: 0px;
     flex-wrap: wrap;
     .post-tag {

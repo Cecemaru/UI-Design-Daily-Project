@@ -1,17 +1,16 @@
 /*=================media query=========*/
+// ============= Media 1272 Max =========
+@media (max-width: 1272px) {
+  .filter-layout {
+    padding: 0 30px;
+  }
+}
+// ============ Media 1001px Max ========
 @media (max-width: 1001px) {
   .button-box {
     display: none;
   }
-}
-
-@media (max-width: 852px) {
-  .mobile-button {
-    @include flex-center;
-  }
-}
-
-@media (max-width: 1001px) {
+  // ========= header layout ====
   header {
     nav {
       li {
@@ -27,7 +26,11 @@
   .button-box {
     display: none;
   }
+  .filter-layout {
+    padding: 0 30px;
+  }
 }
+// ============ Media 852px Max ========
 @media (max-width: 852px) {
   .menu-btn {
     display: block;
@@ -37,18 +40,19 @@
     flex-direction: column;
     gap: 30px;
   }
-  // ============================ header
+  // ========= header layout ====
   header {
     nav {
       .wrapper {
-        top: 100px;
+        top: 0px;
+        padding-top: 100px;
         width: 100%;
         height: 100vh;
         position: fixed;
         overflow: hidden;
         right: -100%;
         display: flex;
-        z-index: 10001;
+        z-index: 10;
         background-color: #fff;
         flex-direction: column;
         transition: all 0.5s;
@@ -58,10 +62,10 @@
         .nav-links {
           display: block;
           list-style-type: disc;
-          margin-block-start: 1em;
-          margin-block-end: 1em;
-          margin-inline-start: 0px;
-          margin-inline-end: 0px;
+          -webkit-padding-inline-start: 0;
+          -moz-padding-inline-start: 0;
+          -ms-padding-inline-start: 0;
+          -o-padding-inline-start: 0;
           padding-inline-start: 0px;
         }
         li {
@@ -95,18 +99,16 @@
       }
     }
   }
+  .filter-layout {
+    padding: 0 30px;
+  }
 }
-// resorces
+// ============ Media 656px Max ========
 @media screen and (max-width: 656px) {
-  // .active-scope {
-  //   width: 30%;
-  // }
-  // .category-scope {
-  //   width: 70%;
-  // }
   .filter-layout {
     display: flex;
     flex-direction: column;
     margin-bottom: 20px;
+    padding: 0 10px;
   }
 }

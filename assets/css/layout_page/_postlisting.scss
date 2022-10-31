@@ -10,6 +10,10 @@
   .post-listing {
     gap: 15px;
     display: grid;
+    transition: 0.5s;
+    &:hover {
+      transform: scale(1.05);
+    }
     a {
       position: relative;
       @include border-radius(15px);
