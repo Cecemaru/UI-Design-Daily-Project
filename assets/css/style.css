@@ -254,6 +254,7 @@ body {
 button {
   padding: 15px 30px;
   border: none;
+  cursor: pointer;
 }
 button.button-dark {
   vertical-align: top;
@@ -263,11 +264,19 @@ button.button-dark {
   background-color: #202142;
   color: #fcfcff;
   border-radius: 10px;
+  transition: 0.5s;
+}
+button.button-dark:hover {
+  transform: translateX(5px) translateY(-7px);
 }
 button.button-light {
   padding: 0 10px;
   background-color: transparent;
   color: #202142;
+  transition: 0.5s;
+}
+button.button-light:hover {
+  transform: translateY(-7px);
 }
 
 .button-box {
@@ -453,31 +462,31 @@ button.button-light {
   transition: 0.5s;
 }
 .software-scope .software-item.figma {
-  background-image: url("../images/figma-logo.svg");
+  background-image: url("../images/software-icon/figma-logo.svg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: 19px;
 }
 .software-scope .software-item.sketch {
-  background-image: url("../images/sketch-logo.svg");
+  background-image: url("../images/software-icon/sketch-logo.svg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: 32px;
 }
 .software-scope .software-item.studio {
-  background-image: url("../images/invision-studio-logo.svg");
+  background-image: url("../images/software-icon/invision-studio-logo.svg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: 29px;
 }
 .software-scope .software-item.xd {
-  background-image: url("../images/adobe-xd-logo.svg");
+  background-image: url("../images/software-icon/adobe-xd-logo.svg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: 32px;
 }
 .software-scope .software-item.photoshop {
-  background-image: url("../images/photoshop-logo.svg");
+  background-image: url("../images/software-icon/photoshop-logo.svg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: 34px;

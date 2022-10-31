@@ -1,6 +1,7 @@
 button {
   padding: 15px 30px;
   border: none;
+  cursor: pointer;
   &.button-dark {
     vertical-align: top;
     display: inline-block;
@@ -9,11 +10,19 @@ button {
     background-color: $main-clr;
     color: $main-bg;
     @include border-radius(10px);
+    transition: 0.5s;
+    &:hover {
+      transform: translateX(5px) translateY(-7px);
+    }
   }
   &.button-light {
     padding: 0 10px;
     background-color: transparent;
     color: $main-clr;
+    transition: 0.5s;
+    &:hover {
+      transform: translateY(-7px);
+    }
   }
 }
 .button-box {
